@@ -8,9 +8,8 @@ def test_sample_run_anonymizer():
     start = 11
     end = 15
     # call `sample_run_anonymizer`
-    result =  sample_run_anonymizer(text,start,end)
+    result = sample_run_anonymizer(text, 11, 15)
+    #result =  sample_run_anonymizer(text,start,end)
     # check the output of the call
     assert result.text == "My name is BIP."
     assert len(result.items) == 1
-    assert start == 11
-    assert end == 15
