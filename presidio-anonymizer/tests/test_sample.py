@@ -16,4 +16,3 @@ def test_sample_run_anonymizer():
     assert result.items[0]
     assert result.items[0].start
     assert result.items[0].end
-    
