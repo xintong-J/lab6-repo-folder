@@ -13,4 +13,7 @@ def test_sample_run_anonymizer():
     # check the output of the call
     assert result.text == "My name is BIP."
     assert len(result.items) == 1
-    assert result.items
+    assert result.items[0]
+    assert result.items[0].start
+    assert result.items[0].end
+    
