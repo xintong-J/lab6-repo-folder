@@ -1,6 +1,14 @@
+
 import pytest
+from presidio_anonymizer.entities.engine import result
 from presidio_anonymizer.sample import sample_run_anonymizer
 
 def test_sample_run_anonymizer():
-    # replace the following line with your test
-    pass
+    # prepare input values
+    text = "My name is Bond."
+    start = 11
+    end = 15
+    # call `sample_run_anonymizer`
+    result =  sample_run_anonymizer(text, start, end)
+    # check the output of the call
+    return result
